@@ -1,5 +1,5 @@
 # Topic Modeling and Latent Dirichlet Allocation (LDA)
-A quick intro to LDA with an example
+A quick non-technical intro to LDA with an example
 
 ## Intro
 En este doc vamos a explorar una técnica no supervisada que se utiliza para encontrar temas “ocultos” en una colección de textos. El algoritmo se llama Latent Dirichlet Allocation (LDA) y fue propuesto por David Blei, Andrew Ng, Michael Jordan (no es el basquetbolista!!!). Si bien hay varios artículos en internet sobre el tema, compartimos acá otra manera de interpretar cómo funciona el algoritmo y una aplicación del mismo en un caso con datos de conversaciones de Customer Support del equipo de Nuvemshop. Incluimos como ejemplo un Jupyter notebook (sin la fuente de datos por motivos de confidencialidad).
