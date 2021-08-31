@@ -9,6 +9,8 @@ Supongamos que tenemos una colección de imágenes que queremos clasificar en te
 
 Acá hay un ejemplo de tres de esas imágenes. 
 
+![first_picture](https://github.com/rloredo/LDA_explanation_and_example/blob/main/pictures/img1.png)
+
 Como primer paso (lo mismo que haríamos con textos), extraemos las palabras u objetos que tiene cada imagen (documento si habláramos de textos). 
 
  - Vocabulario foto 1: árbol, animal, flor, río, arbusto,pasto
