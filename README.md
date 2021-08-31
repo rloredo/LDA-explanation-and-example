@@ -23,6 +23,7 @@ Y luego armamos un vocabulario total
 
 Supongamos ahora que el resto de todas las imágenes de mi colección se generan a partir del vocabulario total. Es decir, las fotos solo pueden tener esos objetos. Entre las fotos van a aparecer otras muy parecidas a estas tres, pero también van a aparecer fotos como esta:
 
+![second_picture](https://github.com/rloredo/LDA_explanation_and_example/blob/main/pictures/img2.png)
  - Vocabulario foto 4: ventana, árbol, auto, pasto, cemento, puerta, luces, cartel
 
 
@@ -56,6 +57,9 @@ Una manera visual de ver este tipo de distribuciones es con un triángulo. Cada 
 
 En este caso, si yo ya definí las funciones de cada topic, al recibir esta nueva imagen, puedo ubicarla en alguna posición del triángulo y medir la distancia que tiene a los otros vértices. En la imagen se puede ver el triángulo que define mi distribución y dónde ubicaría la imagen 4. 
 
+![third_picture](https://github.com/rloredo/LDA_explanation_and_example/blob/main/pictures/img3.png)
+
+
 La imagen 4 tiene un auto, puerta, ventana, cemento, cartel y una persona. Pero también tiene pasto y árbol. Entonces podemos decir que tiene un 74% ciudad, un 24% naturaleza y un 2% estadio de fútbol (al fin de cuentas, tiene pasto, carteles y personas, pero no tiene las cosas más características que son el arco y la pelota). Acá nosotros ya definimos la distribución de palabras de cada topic. En el caso real podríamos hacer esto con keywords, por ejemplo. 
 
 Pero si queremos hacer topic modelling y queremos descubrir temas latentes u ocultos (de ahí el nombre de latent) tenemos que ir probando diferentes distribuciones de palabras y pesos (y también de cantidad de temas!). Esa va a ser la tarea del algoritmo de LDA.
@@ -66,6 +70,7 @@ Básicamente LDA va probando diferentes funciones y se fija dónde quedan ubicad
 ¿Cómo sabemos cuándo la distribución está “bien”o es “la mejor”?
 Bueno, veamos qué pasa si cambiamos la distribución del triángulo de la imagen anterior.
 
+![fourth_picture](https://github.com/rloredo/LDA_explanation_and_example/blob/main/pictures/img4.png)
 
 Acá repartí en partes iguales entre los tres temas las palabras que tiene la foto y el punto quedó en el medio del triángulo. Y si vemos las palabras de cada vértice, no tienen mucho sentido. Entonces, el algoritmo lo que hace es probar con diferentes distribuciones de palabras y pesos y detenerse cuando encuentra una distribución que “no tiene todos los puntos en el medio” o que tiene la menor cantidad de puntos en el medio.
 
